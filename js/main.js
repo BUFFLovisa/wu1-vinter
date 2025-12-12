@@ -13,7 +13,7 @@ const canvas = document.createElement("canvas");
 canvas.setAttribute("id", "bg");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
+ 
 const ctx = canvas.getContext("2d");
 const pi2 = 2 * Math.PI;
 
