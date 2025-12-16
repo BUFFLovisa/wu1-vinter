@@ -1,16 +1,18 @@
-@font-face {
-  font-family: 'KerakNeraka';
-  src: url('./KerakNeraka-8Oaoz.otf');
-  font-weight: normal;
+
+.sofia-sans {
+  font-family: "Sofia Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 
+
 :root {
   --color-bg: rgba(103, 157, 157, 0.587);
-  --color-fg: #fff;
+  --color-fg: #611010;
 
   --font-body: sans-serif;
-  --font-header: 'KerakNeraka', sans-serif;
+  --font-header: 'Sofia Sans';
 
   --step--2: clamp(0.6331rem, 0.6141rem + 0.0949vw, 0.6877rem);
   --step--1: clamp(0.844rem, 0.7993rem + 0.2234vw, 0.9724rem);
@@ -32,9 +34,7 @@ body {
     display: grid;
     place-items: center;
     background-color: var(--color-bg);
-    /* Gradient overlay + background image (falls back to background-color) */
-    background-image: linear-gradient(rgba(103,157,157,0.35), rgba(103,157,157,0.35)),
-                      url('https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1350&q=80');
+    background-image:  url(../ChristmasSenku.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,10 +50,10 @@ main {
  
 h1 {
     font-size: var(--step-5);
-    line-height: 1;
+    line-height: 0.1;
     color: var(--color-fg);
     font-family: var(--font-header);
-    letter-spacing: .1em;
+    
 }
 
 p {
